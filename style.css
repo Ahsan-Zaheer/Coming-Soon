@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+}
+.container{
+    position: relative;
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 33vh;
+    left: 46%;
+    z-index: 2;
+}
+.logo-de{
+    width: 100px;
+}
+
+.tagline{
+    margin-top: 20px;
+    width: 220px;
+}
+
+.disc{
+    z-index: 3;
+    position: absolute;
+    top: 75vh;
+    left: 35%;
+    width: 600px;
+}
+@media screen and (max-width: 600px){
+    .logo{
+        left: 35%;
+        top: 30vh;
+    }
+    .logo-de{
+        width: 50px;
+    }
+    .tagline{
+        width: 100px;
+    }
+    .disc{
+        width: 250px;
+        left: 15%;
+    }
+}
