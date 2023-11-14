@@ -123,7 +123,13 @@
                 left: 15%;
             }
 
-
+            #svg-1{
+                
+                transform: scale(1.5);
+                
+            }
+           
+            
 
         }
 
@@ -134,7 +140,7 @@
     <div class="svg-bg">
     <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" id="svg-1">
         <defs>
-          <path id='sineWave' fill="black" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+          <path id='sineWave' fill="black" fill-opacity="0.4" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
         </defs>
         <use class="wave no-animation"  id="wave" href="#sineWave" />
         <use class="wave no-animation"  id="wave1" x="-100%" href="#sineWave" />
@@ -145,7 +151,7 @@
       </svg>
     <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" class="wave-2" id="svg-2">
         <defs>
-          <path id='sineWave' fill="black" fill-opacity="1" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+          <path id='sineWave' fill="black" fill-opacity="0.3" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
         </defs>
         <use class="wave3 no-animation"  id="wave6" href="#sineWave" />
         <use class="wave3 no-animation"  id="wave7" x="-100%" href="#sineWave" />
@@ -278,6 +284,44 @@
             wave10.classList.add('no-animation');
             wave11.classList.add('no-animation');
         });
+
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                wave.classList.remove('no-animation');
+                wave1.classList.remove('no-animation');
+                wave2.classList.remove('no-animation');
+                wave3.classList.remove('no-animation');
+                wave4.classList.remove('no-animation');
+                wave5.classList.remove('no-animation');
+                wave6.classList.remove('no-animation');
+                wave7.classList.remove('no-animation');
+                wave8.classList.remove('no-animation');
+                wave9.classList.remove('no-animation');
+                wave10.classList.remove('no-animation');
+                wave11.classList.remove('no-animation');
+
+                
+
+            } else {
+                wave.classList.add('no-animation');
+                wave1.classList.add('no-animation');
+                wave2.classList.add('no-animation');
+                wave3.classList.add('no-animation');
+                wave4.classList.add('no-animation');
+                wave5.classList.add('no-animation');
+                wave6.classList.add('no-animation');
+                wave7.classList.add('no-animation');
+                wave8.classList.add('no-animation');
+                wave9.classList.add('no-animation');
+                wave10.classList.add('no-animation');
+                wave11.classList.add('no-animation');
+            }
+            }
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x); // Call listener function at run time
+        x.addListener(myFunction);
+
+        
     
     </script>
     
