@@ -3,104 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Energy - Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(51, 51, 51);
+        }
 
+
+        /* Animations */
+        .wave {
+          animation: wave 8s linear infinite;
+        }
+  
+        .wave1 {
+          animation: wave1 10s linear infinite;
+        }
+  
+        .wave2 {
+          animation: wave2 12s linear infinite;
+        }
+        
+        .wave3 {
+          animation: wave-back 8s linear infinite ;
+        }
+
+        @keyframes wave {
+          0% {
+            transform: translateX(0%);
+          }
+  
+          100% {
+            transform: translateX(100%);
+          }
+        }
+        @keyframes wave-back {
+          0% {
+            transform: translateX(100%);
+          }
+  
+          100% {
+            transform: translateX(0%);
+          }
+        }
+  
+        @keyframes wave1 {
+          0% {
+            transform: scaleY(1.1) translateX(0%);
+          }
+  
+          100% {
+            transform: scaleY(1.1) translateX(100%);
+          }
+        }
+  
+        @keyframes wave2 {
+          0% {
+            transform: scaleY(.9) translateX(0%);
+          }
+  
+          100% {
+            transform: scaleY(.9) translateX(100%);
+          }
+        }
+
+
+
+
+        body {
+        margin: 0;
+        }
+
+        svg {
+        width: 100%;
+        }
+
+        .wave-2{
+            transform: rotate(180deg);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .bg{
+            position: relative;
+            height: 100vh;
+        }
+        
+        .svg-bg{
+            height: 100vh;
+        }
+        .no-animation{
+            animation: none;
+        }
+
+        .logo{
+            position: absolute;
+            left: 44%;
+            top: 25%;
+            width: 220px;
+        }
+        .discription{
+            position: absolute;
+            bottom: 20%;
+            left: 29%;
+            width: 700px;
+        }
+
+
+        @media screen and (max-width: 600px){
+            .logo{
+                width: 150px;
+                left: 32%;
+            }
+            .discription{
+                width: 300px;
+                left: 15%;
+            }
+
+
+
+        }
+
+      </style>
+</head>
 <body>
-    <div class="container">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background:none;display:block;z-index:1;position:absolute;" width="100%" height="97vh" preserveAspectRatio="xMidYMid" viewBox="0 0 1900 100vh">
-            <defs>
-              <pattern id="pid-0.42691670657466374" x="0" y="0" width="46.08" height="46.08" patternUnits="userSpaceOnUse">
-                <g transform="scale(0.18)"><path d="M -256 12.240000000000002 C -192 12.240000000000002 -192 2 -128 2 C -64 2 -64 12.240000000000002 2 12.240000000000002 C 64 12.240000000000002 64 2 128 2 C 192 2 192 12.240000000000002 256 12.240000000000002 L 384 384 L -384 384 L -384 12.240000000000002 Z" fill="none" stroke="#352f2f" stroke-width="3" transform="translate(0 -51.2)">
-              <animateTransform attributeName="transform" type="translate" values="256 -51.2;0 -51.2;256 -51.2" keyTimes="0;0.5;1" dur="2.564102564102564s" repeatCount="indefinite" calcMode="spline" begin="0s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
-            </path><path d="M -256 12.240000000000002 C -192 12.240000000000002 -192 2 -128 2 C -64 2 -64 12.240000000000002 2 12.240000000000002 C 64 12.240000000000002 64 2 128 2 C 192 2 192 12.240000000000002 256 12.240000000000002 L 384 384 L -384 384 L -384 12.240000000000002 Z" fill="none" stroke="#060404" stroke-width="3" transform="translate(0 0)">
-              <animateTransform attributeName="transform" type="translate" values="0 0;256 0;0 0" keyTimes="0;0.5;1" dur="2.564102564102564s" repeatCount="indefinite" calcMode="spline" begin="-0.2564102564102564s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
-            </path><path d="M -256 12.240000000000002 C -192 12.240000000000002 -192 2 -128 2 C -64 2 -64 12.240000000000002 2 12.240000000000002 C 64 12.240000000000002 64 2 128 2 C 192 2 192 12.240000000000002 256 12.240000000000002 L 384 384 L -384 384 L -384 12.240000000000002 Z" fill="none" stroke="#3c3939" stroke-width="3" transform="translate(0 51.2)">
-              <animateTransform attributeName="transform" type="translate" values="256 51.2;0 51.2;256 51.2" keyTimes="0;0.5;1" dur="2.564102564102564s" repeatCount="indefinite" calcMode="spline" begin="-0.5128205128205128s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
-            </path><path d="M -256 12.240000000000002 C -192 12.240000000000002 -192 2 -128 2 C -64 2 -64 12.240000000000002 2 12.240000000000002 C 64 12.240000000000002 64 2 128 2 C 192 2 192 12.240000000000002 256 12.240000000000002 L 384 384 L -384 384 L -384 12.240000000000002 Z" fill="none" stroke="#000000" stroke-width="3" transform="translate(0 102.4)">
-              <animateTransform attributeName="transform" type="translate" values="0 102.4;256 102.4;0 102.4" keyTimes="0;0.5;1" dur="2.564102564102564s" repeatCount="indefinite" calcMode="spline" begin="-0.7692307692307692s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
-            </path><path d="M -256 12.240000000000002 C -192 12.240000000000002 -192 2 -128 2 C -64 2 -64 12.240000000000002 2 12.240000000000002 C 64 12.240000000000002 64 2 128 2 C 192 2 192 12.240000000000002 256 12.240000000000002 L 384 384 L -384 384 L -384 12.240000000000002 Z" fill="none" stroke="#3f3f3f" stroke-width="3" transform="translate(0 153.6)">
-              <animateTransform attributeName="transform" type="translate" values="256 153.6;0 153.6;256 153.6" keyTimes="0;0.5;1" dur="2.564102564102564s" repeatCount="indefinite" calcMode="spline" begin="-1.0256410256410255s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
-            </path><path d="M -256 12.240000000000002 C -192 12.240000000000002 -192 2 -128 2 C -64 2 -64 12.240000000000002 2 12.240000000000002 C 64 12.240000000000002 64 2 128 2 C 192 2 192 12.240000000000002 256 12.240000000000002 L 384 384 L -384 384 L -384 12.240000000000002 Z" fill="none" stroke="#352f2f" stroke-width="3" transform="translate(0 204.8)">
-              <animateTransform attributeName="transform" type="translate" values="0 204.8;256 204.8;0 204.8" keyTimes="0;0.5;1" dur="2.564102564102564s" repeatCount="indefinite" calcMode="spline" begin="0s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
-            </path></g>
-              </pattern>
-            </defs>
-            <rect x="0" y="0" width="100%" height="97vh" fill="url(#pid-0.42691670657466374)"></rect>
-            </svg>
-        <div class="logo">
-            <svg width="76" height="66" viewBox="0 0 76 66" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-de">
-                <path id="logo" d="M37.9995 65.5973H0.425781V15.12H37.9995V23.5341H9.88629V35.6257H37.9995V44.741H10.3261V55.7808H27.2567L37.9995 65.5973Z" fill="#E7116F"/>
-                <path d="M49.1214 0.402832H24.6016V53.3268H49.1214C63.7259 53.3268 75.572 41.4814 75.572 26.8611C75.5646 12.2482 63.7259 0.402832 49.1214 0.402832ZM64.9709 24.7575L47.5036 44.659C47.2352 44.9649 46.7357 44.7485 46.773 44.3457L48.0627 29.4942H36.2017C35.8438 29.4942 35.65 29.069 35.8886 28.8005L52.8564 9.39878C53.1173 9.10041 53.6168 9.30181 53.587 9.70462L52.6178 24.0638H64.6578C65.0156 24.0638 65.2094 24.489 64.9709 24.7575Z" fill="#FF6934"/>
-                <path d="M24.6016 53.3267H37.9984V65.5972L24.6016 53.3267Z" fill="#6B4F95"/>
-                </svg>                
-            <img src="./tagline.svg" alt="" class="tagline">
-        </div>
-        <img src="./disc.svg" alt="" class="disc">
-            
+    <div class="bg">
+    <div class="svg-bg">
+    <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" id="svg-1">
+        <defs>
+          <path id='sineWave' fill="black" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+        </defs>
+        <use class="wave no-animation"  id="wave" href="#sineWave" />
+        <use class="wave no-animation"  id="wave1" x="-100%" href="#sineWave" />
+        <use class="wave1 no-animation" id="wave2" href="#sineWave" />
+        <use class="wave1 no-animation" id="wave3" x="-100%" href="#sineWave" />
+        <use class="wave2 no-animation" id="wave4" href="#sineWave" />
+        <use class="wave2 no-animation" id="wave5" x="-100%" href="#sineWave" />
+      </svg>
+    <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" class="wave-2" id="svg-2">
+        <defs>
+          <path id='sineWave' fill="black" fill-opacity="1" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+        </defs>
+        <use class="wave3 no-animation"  id="wave6" href="#sineWave" />
+        <use class="wave3 no-animation"  id="wave7" x="-100%" href="#sineWave" />
+        <use class="wave1 no-animation" id="wave8" href="#sineWave" />
+        <use class="wave1 no-animation" id="wave9" x="-100%" href="#sineWave" />
+        <use class="wave2 no-animation" id="wave10" href="#sineWave" />
+        <use class="wave2 no-animation" id="wave11" x="-100%" href="#sineWave" />
+      </svg>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <img src="./logo.png" alt="" class="logo">
+
+    <img src="./disc.svg" alt="" class="discription">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
-        // var tl = gsap.timeline({defaults:{duration:.7, ease: Back.easeOut.config(2), opacity:0}})
 
+        const container = document.querySelector('.bg');
+        const wave = document.querySelector('#wave');
+        const wave1 = document.querySelector('#wave1');
+        const wave2 = document.querySelector('#wave2');
+        const wave3 = document.querySelector('#wave3');
+        const wave4 = document.querySelector('#wave4');
+        const wave5 = document.querySelector('#wave5');
+        const wave6 = document.querySelector('#wave6');
+        const wave7 = document.querySelector('#wave7');
+        const wave8 = document.querySelector('#wave8');
+        const wave9 = document.querySelector('#wave9');
+        const wave10 = document.querySelector('#wave10');
+        const wave11 = document.querySelector('#wave11');
 
-        // //draws all elements with the "draw-me" class applied 
-        // tl.from(".draw-me", {duration:1,drawSVG: 0});
+        const svg_1 = document.querySelector('#svg-1');
+        const svg_2 = document.querySelector('#svg-2');
+        const logo = document.querySelector('.logo');
 
-        gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin);
-
-        /* 
-        There's only one <path> but it has a bunch of individual, disconnected segments ("M" commands)
-        so we'll use the helper function to split that into a bunch of <path> elements so that the browser
-        can render the stroke progressively in a correct manner.
-        */
-
-        let paths = splitPaths("#logo");
-        // to animate all the segments at once...
-        // gsap.from(paths, { drawSVG: 0, duration: 5 });
-
-        // but instead, let's animate each segment one-after-the-other and make sure there's a consistent speed.
-        let duration = 5,
-            distance = 0,
-            tl = gsap.timeline();
-        paths.forEach(segment => distance += segment.getTotalLength());
-        paths.forEach(segment => {
-        tl.from(segment, {
-            drawSVG: 0,
-            ease: "none",
-            duration: duration * (segment.getTotalLength() / distance)
+        var half_height = window.innerHeight/2;
+    
+        svg_1.addEventListener('mousemove', (event) => {
+            // Add the animation class when the cursor moves
+            wave.classList.remove('no-animation');
+            wave1.classList.remove('no-animation');
+            wave2.classList.remove('no-animation');
+            wave3.classList.remove('no-animation');
+            wave4.classList.remove('no-animation');
+            wave5.classList.remove('no-animation');
+            
         });
+    
+        svg_1.addEventListener('mouseleave', () => {
+            // Remove the animation class when the cursor leaves the container
+            wave.classList.add('no-animation');
+            wave1.classList.add('no-animation');
+            wave2.classList.add('no-animation');
+            wave3.classList.add('no-animation');
+            wave4.classList.add('no-animation');
+            wave5.classList.add('no-animation');
+           
+        });
+        svg_2.addEventListener('mousemove', (event) => {
+            // Add the animation class when the cursor moves
+            
+            wave6.classList.remove('no-animation');
+            wave7.classList.remove('no-animation');
+            wave8.classList.remove('no-animation');
+            wave9.classList.remove('no-animation');
+            wave10.classList.remove('no-animation');
+            wave11.classList.remove('no-animation');
+        });
+    
+        svg_2.addEventListener('mouseleave', () => {
+            // Remove the animation class when the cursor leaves the container
+            
+            wave6.classList.add('no-animation');
+            wave7.classList.add('no-animation');
+            wave8.classList.add('no-animation');
+            wave9.classList.add('no-animation');
+            wave10.classList.add('no-animation');
+            wave11.classList.add('no-animation');
         });
 
-        // helper function that busts apart a single <path> that has multiple segments into a <path> for each segment (indicated by an "M" command);
-        function splitPaths(paths) {
-        let toSplit = gsap.utils.toArray(paths),
-            newPaths = [];
-        if (toSplit.length > 1) {
-            toSplit.forEach(path => newPaths.push(...splitPaths(path)));
-        } else {
-            let path = toSplit[0],
-                rawPath = MotionPathPlugin.getRawPath(path),
-                parent = path.parentNode,
-                attributes = [].slice.call(path.attributes);
-            newPaths = rawPath.map(segment => {
-            let newPath = document.createElementNS("http://www.w3.org/2000/svg", "path"),
-                i = attributes.length;
-            while (i--) {
-                newPath.setAttributeNS(null, attributes[i].nodeName, attributes[i].nodeValue);
-            }
-            newPath.setAttributeNS(null, "d", "M" + segment[0] + "," + segment[1] + "C" + segment.slice(2).join(",") + (segment.closed ? "z" : ""));
-            parent.insertBefore(newPath, path);
-            return newPath;
-            });
-            parent.removeChild(path);
-        }
-        return newPaths;
-        }
+
+        logo.addEventListener('mousemove', (event) => {
+            // Add the animation class when the cursor moves
+            wave.classList.remove('no-animation');
+            wave1.classList.remove('no-animation');
+            wave2.classList.remove('no-animation');
+            wave3.classList.remove('no-animation');
+            wave4.classList.remove('no-animation');
+            wave5.classList.remove('no-animation');
+            wave6.classList.remove('no-animation');
+            wave7.classList.remove('no-animation');
+            wave8.classList.remove('no-animation');
+            wave9.classList.remove('no-animation');
+            wave10.classList.remove('no-animation');
+            wave11.classList.remove('no-animation');
+        });
+
+        logo.addEventListener('mouseleave', () => {
+            // Remove the animation class when the cursor leaves the container
+            wave.classList.add('no-animation');
+            wave1.classList.add('no-animation');
+            wave2.classList.add('no-animation');
+            wave3.classList.add('no-animation');
+            wave4.classList.add('no-animation');
+            wave5.classList.add('no-animation');
+            wave6.classList.add('no-animation');
+            wave7.classList.add('no-animation');
+            wave8.classList.add('no-animation');
+            wave9.classList.add('no-animation');
+            wave10.classList.add('no-animation');
+            wave11.classList.add('no-animation');
+        });
+    
     </script>
+    
 </body>
 </html>
