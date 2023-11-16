@@ -15,7 +15,7 @@
             font-family: 'Poppins', sans-serif;
         }
         body{
-            background-color: #04062F;
+            background-color: #131395;
         }
 
 
@@ -106,41 +106,49 @@
 
         .logo{
             position: absolute;
-            left: 44%;
-            top: 32%;
-            width: 220px;
+            left: 46%;
+            top: 30%;
+            width: 140px;
         }
         .title{
           position: absolute;
-          bottom: 30%;
-          left: 41%;
+          bottom: 39%;
+          text-align: center;
           font-size: 50px;
           color: white;
+          width: 100%;
         }
-        .discription{
+        .disc{
             position: absolute;
-            bottom: 18%;
-            left: 29%;
-            width: 700px;
+            bottom: 5%;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-size: 22px;
+            font-weight: 300;
         }
-
+        .change{
+            color: #E6116F;
+        }
+        .change-2{
+            color: #F05624;
+        }
 
         @media screen and (max-width: 600px){
             .logo{
-                width: 190px;
-                left: 28%;
+                width: 140px;
+                left: 32%;
                 top: 30%;
             }
-            .discription{
-                width: 340px;
-                left: 9%;
+            .disc{
+                font-size: 20px;
             }
             svg{
                 width: 400% !important;
             }
             .title{
-              bottom: 24%;
-              left: 10%;
+              bottom: 40%;
+              
               font-size: 47px;
               
             }
@@ -153,7 +161,7 @@
     <div class="svg-bg">
     <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" id="svg-1">
         <defs>
-          <path id='sineWave' fill="#3239E1" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+          <path id='sineWave' fill="#2970EB" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
         </defs>
         <use class="wave no-animation"  id="wave" href="#sineWave" />
         <use class="wave no-animation"  id="wave1" x="-100%" href="#sineWave" />
@@ -174,12 +182,16 @@
         <use class="wave2 no-animation" id="wave11" x="-100%" href="#sineWave" />
       </svg>
     </div>
-    <img src="./logo.png" alt="" class="logo">
+
+
+    <img src="./logo.svg" alt="" class="logo">
 
 
     <h2 class="title">Coming Soon</h2>
 
-    <img src="./disc.svg" alt="" class="discription">
+    <h3 class="disc">
+      Charging the future of <br> <span class="change">DIGITAL <span class="change-2">INNOVATION</span></span> <br> Get ready to dive into our digital Universe.
+    </h3>
     </div>
 
 
