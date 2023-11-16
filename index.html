@@ -109,12 +109,16 @@
         .no-animation{
             animation: none;
         }
-
+        .wrapper{
+          width: 100%;
+          position: absolute;
+          top: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         .logo{
-            position: absolute;
-            left: 46%;
-            top: 30%;
-            width: 140px;
+            width: 140px; 
         }
         .title{
           position: absolute;
@@ -147,7 +151,7 @@
             .logo{
                 width: 100px;
                 left: 39%;
-                top: 33%;
+                top: 30%;
             }
             .disc{
                 font-size: 20px;
@@ -193,9 +197,9 @@
       </svg>
     </div>
 
-
+    <div class="wrapper">
     <img src="./logo.svg" alt="" class="logo">
-
+    </div>
 
     <h2 class="title">Coming Soon</h2>
 
